@@ -1,0 +1,33 @@
+/* Custom styles for traditional/natural look */
+.traditional-bg {
+    background-color: #f7fdee;
+}
+.main-color {
+    background-color: #047857;
+}
+.accent-color {
+    background-color: #fcd34d;
+}
+.font-display {
+    font-family: 'Playfair Display', serif;
+}
+.font-body {
+    font-family: 'Inter', sans-serif;
+}
+.article-link {
+    color: #047857;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.content-section {
+    display: none;
+    min-height: calc(100vh - 80px);
+}
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+.mobile-menu-open {
+    max-height: 500px !important;
+}

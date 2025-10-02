@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urap Tradisional Mpok Utiq | Resep Khas Jakarta Sehat & Segar</title>
+    <meta name="description" content="Nikmati kelezatan Urap Tradisional Mpok Utiq. Sayuran segar, bumbu kelapa khas, resep turun temurun. Pesan sekarang untuk rasa asli Nusantara!">
+    <meta name="keywords" content="Urap Tradisional, Mpok Utiq, Urap Sayur, Masakan Khas Jakarta, Makanan Sehat Indonesia, Pesan Urap Online">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="traditional-bg font-body text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="main-color shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#home" onclick="navigate('home')" class="text-3xl font-display font-extrabold text-white tracking-wider">
+                    Mpok Utiq
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <button onclick="navigate('home')" class="text-white hover:text-accent-color transition duration-300 font-semibold text-lg">Halaman Utama</button>
+                    <button onclick="navigate('about')" class="text-white hover:text-accent-color transition duration-300 font-semibold text-lg">Tentang Kami</button>
+                    <button onclick="navigate('menu')" class="text-white hover:text-accent-color transition duration-300 font-semibold text-lg">Menu & Produk</button>
+                    <button onclick="navigate('order')" class="text-white hover:text-accent-color transition duration-300 font-semibold text-lg">Cara Pemesanan</button>
+                    <button onclick="navigate('promo')" class="text-white hover:text-accent-color transition duration-300 font-semibold text-lg">Promo & Loyalty</button>
+                    <button onclick="navigate('blog')" class="text-white hover:text-accent-color transition duration-300 font-semibold text-lg">Blog SEO</button>
+                </nav>
+                <button id="mobile-menu-button" type="button" class="md:hidden text-white hover:text-accent-color focus:outline-none" aria-expanded="false" onclick="toggleMobileMenu()">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden main-color text-center shadow-inner">
+            <div class="pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
+                <button onclick="navigate('home'); toggleMobileMenu()" class="text-white block px-3 py-2 text-base font-medium hover:bg-green-600 w-full">Halaman Utama</button>
+                <button onclick="navigate('about'); toggleMobileMenu()" class="text-white block px-3 py-2 text-base font-medium hover:bg-green-600 w-full">Tentang Kami</button>
+                <button onclick="navigate('menu'); toggleMobileMenu()" class="text-white block px-3 py-2 text-base font-medium hover:bg-green-600 w-full">Menu & Produk</button>
+                <button onclick="navigate('order'); toggleMobileMenu()" class="text-white block px-3 py-2 text-base font-medium hover:bg-green-600 w-full">Cara Pemesanan</button>
+                <button onclick="navigate('promo'); toggleMobileMenu()" class="text-white block px-3 py-2 text-base font-medium hover:bg-green-600 w-full">Promo & Loyalty</button>
+                <button onclick="navigate('blog'); toggleMobileMenu()" class="text-white block px-3 py-2 text-base font-medium hover:bg-green-600 w-full">Blog SEO</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
+        <section id="home" class="content-section pt-10">Home Section</section>
+        <section id="about" class="content-section pt-10">About Section</section>
+        <section id="menu" class="content-section pt-10">Menu Section</section>
+        <section id="order" class="content-section pt-10">Order Section</section>
+        <section id="promo" class="content-section pt-10">Promo Section</section>
+        <section id="blog" class="content-section pt-10">Blog Section</section>
+    </main>
+
+    <footer class="main-color mt-10 p-6 text-center text-white">
+        <p class="text-sm">&copy; 2025 Urap Tradisional Mpok Utiq. Dibuat dengan cinta, menjaga rasa Nusantara.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
